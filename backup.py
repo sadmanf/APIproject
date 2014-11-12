@@ -3,8 +3,8 @@ import json
 
 def acafilter(a):
         if a.find('.org')>-1:
-		if a.find('wikipedia.org')>-1:
-                	return True
+		
+		return True
         if a.find('.edu')>-1:
                 return True
         if a.find('.gov')>-1:
@@ -32,4 +32,5 @@ def getAcademicUrls(query):
         	if acafilter(item['url']):
                 	return item['url']
 
+print getAcademicUrls('chemistry')
 
