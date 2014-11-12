@@ -3,7 +3,8 @@ import json
 
 def acafilter(a):
         if a.find('.org')>-1:
-                return True
+		if a.find('wikipedia.org')>-1:
+                	return True
         if a.find('.edu')>-1:
                 return True
         if a.find('.gov')>-1:
@@ -19,7 +20,7 @@ def acafilter(a):
 def
 
 url="""
-http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=cows&safe=active
+http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q="""+PUTQUERYHERE+"""&safe=active
 """
 request= urllib2.urlopen(url)
 result = request.read()
