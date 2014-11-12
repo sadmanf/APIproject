@@ -1,4 +1,4 @@
 APIproject
 ==========
 
-Using foursquare and sorting. Yay!
+Using Google and filtering. Yay!
